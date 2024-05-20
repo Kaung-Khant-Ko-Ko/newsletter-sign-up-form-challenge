@@ -12,51 +12,85 @@
       href="./assets/images/favicon-32x32.png"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
     <title>
       Frontend Mentor | Newsletter sign-up form with success message
     </title>
   </head>
   <body>
     <!-- Sign-up form start -->
-    <section role="sign-up">
+    <section role="sign-up" class="sign-up">
       <img
         src="./assets/images/illustration-sign-up-desktop.svg"
         alt="Sign up illustration"
+        class="sign-up__image"
       />
-      <div>
-        <h2>Stay updated!</h2>
-        <p>Join 60,000+ product managers receiving monthly updates on:</p>
-        <ul>
-          <li>Product discovery and building what matters</li>
-          <li>Measuring to ensure updates are a success</li>
-          <li>And much more!</li>
+      <div class="sign-up__description">
+        <h2 class="sign-up__heading">Stay updated!</h2>
+        <p class="sign-up__text">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <ul class="sign-up__list">
+          <li class="sign-up__item">
+            <img src="./assets/images/icon-list.svg" alt="List icon" />
+            Product discovery and building what matters
+          </li>
+          <li class="sign-up__item">
+            <img src="./assets/images/icon-list.svg" alt="List icon" />
+            Measuring to ensure updates are a success
+          </li>
+          <li class="sign-up__item">
+            <img src="./assets/images/icon-list.svg" alt="List icon" />And much
+            more!
+          </li>
         </ul>
-        <div>
-          <p>Email address</p>
-          <p>Valid email required</p>
+        <div class="sign-up__email-section">
+          <p class="sign-up__label">Email address</p>
+          <p id="error-message" class="sign-up__error-message">
+            Valid email required
+          </p>
           <input
             type="text"
             name="email"
             id="email"
+            class="sign-up__input"
             placeholder="email@company.com"
             autocomplete="email"
           />
-          <button type="button">Subscribe to monthly newsletter</button>
+          <button type="button" id="sign-up-button" class="sign-up__button">
+            Subscribe to monthly newsletter
+          </button>
         </div>
       </div>
     </section>
     <!-- Sign-up form end -->
 
     <!-- Success message start -->
-    <section role="success-message">
-      <img src="./assets/images/icon-success.svg" alt="Success icon" />
-      <h2>Thanks for subscribing!</h2>
-      <p>
+    <section role="success-message" class="success-message">
+      <img
+        src="./assets/images/icon-success.svg"
+        alt="Success icon"
+        class="success-message__image"
+      />
+      <h2 class="success-message__heading">Thanks for subscribing!</h2>
+      <p class="success-message__text">
         A confirmation email has been sent to <span id="user-email"></span>.
         Please open it and click the button inside to confirm your subscription.
       </p>
-      <button type="button">Dismiss message</button>
+      <button type="button" class="success-message__button">
+        Dismiss message
+      </button>
     </section>
     <!-- Success message end -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
