@@ -31,7 +31,7 @@ p {
   margin: 0px 0.38%;
   padding: 1.74%;
   max-width: 880px;
-  width: calc(100% - 100px);
+  width: calc(100% - 50px);
 
   background-color: hsl(0, 0%, 100%);
 
@@ -191,4 +191,40 @@ p {
   );
   border: 0px;
   box-shadow: 1px 1px 10px 1px hsl(4, 100%, 67%);
+}
+
+@media (max-width: 890px) {
+  body {
+    height: fit-content;
+  }
+
+  .sign-up {
+    border-radius: 0px;
+    flex-direction: column;
+  }
+
+  .sign-up__image {
+    height: 285px;
+    margin: -2%;
+    margin-bottom: 0px;
+    order: 0;
+    content: url("./assets/images/illustration-sign-up-mobile.svg");
+    object-fit: cover;
+    border-radius: 0px 0px 30px 30px;
+  }
+
+  .sign-up__description {
+    padding: 45px 7.39%;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 495px) {
+  .success-message {
+    width: calc(100% - 50px);
+    height: calc(100vh - 195px);
+    top: 0px;
+    border-radius: 0px;
+    padding: 150px 4.52% 45px 4.52%;
+  }
 }
