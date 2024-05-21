@@ -137,7 +137,6 @@ p {
 }
 
 .success-message {
-  visibility: hidden;
   margin: 0px 0.38%;
   padding: 45px 4.52%;
   max-width: 375px;
@@ -145,7 +144,6 @@ p {
 
   position: absolute;
   background-color: hsl(0, 0%, 100%);
-  top: calc((100vh / 2) - 247px);
 
   display: flex;
   flex-direction: column;
@@ -161,6 +159,11 @@ p {
 
 .success-message__heading {
   font-size: 3rem;
+  font-weight: 700;
+  color: hsl(234, 29%, 20%);
+}
+
+.user-email {
   font-weight: 700;
   color: hsl(234, 29%, 20%);
 }

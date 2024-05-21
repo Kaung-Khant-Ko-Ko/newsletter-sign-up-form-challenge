@@ -27,7 +27,7 @@
   </head>
   <body>
     <!-- Sign-up form start -->
-    <section role="sign-up" class="sign-up">
+    <section role="sign-up" id="sign-up" class="sign-up">
       <img
         src="./assets/images/illustration-sign-up-desktop.svg"
         alt="Sign up illustration"
@@ -74,7 +74,11 @@
     <!-- Sign-up form end -->
 
     <!-- Success message start -->
-    <section role="success-message" class="success-message">
+    <section
+      role="success-message"
+      id="success-message"
+      class="success-message"
+    >
       <img
         src="./assets/images/icon-success.svg"
         alt="Success icon"
@@ -82,10 +86,15 @@
       />
       <h2 class="success-message__heading">Thanks for subscribing!</h2>
       <p class="success-message__text">
-        A confirmation email has been sent to <span id="user-email"></span>.
-        Please open it and click the button inside to confirm your subscription.
+        A confirmation email has been sent to
+        <span id="user-email" class="user-email"></span>. Please open it and
+        click the button inside to confirm your subscription.
       </p>
-      <button type="button" class="success-message__button">
+      <button
+        type="button"
+        id="success-message__button"
+        class="success-message__button"
+      >
         Dismiss message
       </button>
     </section>
